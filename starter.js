@@ -274,7 +274,7 @@ const identifier = (arr) => {
     return arr.filter((job) => job.programmer)
 }
 
-console.log(identifier(jobs))
+//console.log(identifier(jobs))
 // call the function passing in the jobs array
 
 
@@ -296,7 +296,7 @@ const productOfArray = numbers => {
 }
 
 // CODE HERE
-console.log(productOfArray(numsToReduce))
+//console.log(productOfArray(numsToReduce))
 
 // call productOfArray passing in numsToReduce
 
@@ -326,5 +326,6 @@ const expenses = [
         amount: 300
     }
 ]
-
-//const remaining // = expenses.reduce(//callback, //initial value)
+//anwser
+const remaining  = expenses.reduce((total, current) => total - current.amount, budget)
+console.log(remaining)
